@@ -71,6 +71,8 @@ $RequireConfirmation = $true
         "All" → fix order everywhere.
 
     $RequireConfirmation: If true, script asks before wiping the card.
+```
+
 
 Usage
 
@@ -82,7 +84,7 @@ Usage
 
     Navigate to the folder containing the script:
 
-cd C:\Path\To\Script
+```cd C:\Path\To\Script```
 
 Allow script execution (temporary for this session):
 
@@ -90,7 +92,7 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 Run the script:
 
-    .\Sort-TFCard.ps1
+```    .\Sort-TFCard.ps1```
 
 What Happens During Execution
 
@@ -120,14 +122,18 @@ Example
 
 If your TF card is mounted as F:\ and you want all folders/files sorted everywhere:
 
+```
 $CardDrive  = "F:\"
 $BackupRoot = "D:\CardBackup"
 $SortScope  = "All"
+```
 
 Then run:
 
+```
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 .\Sort-TFCard.ps1
+```
 
 Safety Notes
 
